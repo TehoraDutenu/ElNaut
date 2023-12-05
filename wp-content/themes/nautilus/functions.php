@@ -24,11 +24,11 @@ class Simple_menu extends Walker_Nav_Menu
         $title = $data_object->title;
         $permalink = $data_object->url;
 
-        $output .= "<nav class='nav flex-column flex-sm-row'>";
-        $output .= "<a class='flex-sm-fill text-sm-center nav-link custom_a' href='$permalink'>$title</a>";
+        $output .= "<div class='nav-item'>";
+        $output .= "<a class='nav-link custom_a' href='$permalink'>$title</a>";
     }
     public function end_el(&$output, $data_object, $depth = 0, $args = null)
     {
-        $output .= "</nav>";
+        $output .= "</div>";
     }
 }
