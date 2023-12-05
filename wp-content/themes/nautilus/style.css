@@ -1,0 +1,66 @@
+/*
+Theme Name: Le Nautilus
+Author: Kalkom
+Description: Thème dédié au Nautilus, tiers-lieu culturel à Perpignan.
+Version: 1.0
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    color: #534b28;;
+    text-decoration: none;
+}
+
+.main-container {
+    margin: auto;
+    height: 150vh;
+    width: 90%;
+}
+
+#logo {
+    margin: 5%;
+}
+
+.header h3 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.header em {
+    color: #d0461f;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.title  {
+    margin-top: 4%;
+}
+
+.custom-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    padding-left: 324px;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.custom_a {
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+}
+
