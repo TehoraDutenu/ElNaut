@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Google Fonts -->
@@ -30,7 +31,7 @@
                 <div class="d-flex flex-column">
                     <!-- Menu navigation -->
                     <nav class="navbar navbar-expand-md navbar-light" role="navigation">
-                        <div class="container justify-content-end mt-4">
+                        <div class="container-fluid justify-content-end mt-4">
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
                                 <i class="fa-solid fa-bars" style="color: #f3dcb0;"></i>

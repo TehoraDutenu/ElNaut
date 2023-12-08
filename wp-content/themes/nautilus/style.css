@@ -31,13 +31,14 @@ a {
 /* - Header - */
 
 #logo {
-    width: 250px;
-    margin: 3%;
+    width: 150px;
+    margin: 5%;
 }
 
 header {
     background-color: #f05a28;
-    height: 285px;
+    box-shadow: 1px 1px 15px #4d4d4d; 
+    height: 200px;
     width: 100%;
 }
 
@@ -62,28 +63,20 @@ header {
 
 /* - Navigation - */
 
-
-
-/* .custom-menu {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10%;
-    padding-left: 324px;
+nav {
+    padding-right: 0;
+    padding-left: 0;
 }
- */
+
 .nav-item {
     justify-content: start;
     margin-left: 20px;
 }
 
-.nav-item :hover {
-    color: hsl(0, 0%, 40%);
-    font-size: 20px;
-    text-shadow: 0.3px 0.3px 0.5px #f3dcb0;
-}
 
 button.navbar-toggler {
-    border: 1px solid #f3dcb0;
+    border: none;
+    padding: 0;
 }
 
 .custom_a {
@@ -99,14 +92,47 @@ button.navbar-toggler {
     align-items: center;
     display:flex;
     justify-content: center;
-    margin: auto;
+    margin: 8% auto;
     padding-top: 30px;;
     width: 100%;
 }
 
 .index-img {
-    box-shadow: 1px 1px 25px hsl(0, 0%, 30%); 
+    box-shadow: 1px 1px 25px #4d4d4d; 
     height: auto;
     margin: auto;
     width: 500px;
 }
+
+.agenda {
+    margin: auto;
+    width: 80%;
+}
+
+iframe {
+    background-color: #fff;
+    box-shadow: 1px 1px 25px #4d4d4d;
+    height: 300px;
+}
+
+.action-link {
+    visibility: hidden;
+}
+
+
+/* -- Taille Desktop -- */
+
+/* - Navigation - */
+.nav-item :hover {
+    color: hsl(0, 0%, 40%);
+    font-size: 20px;
+    text-shadow: 0.3px 0.3px 0.5px #f3dcb0;
+}
+
+/* .custom-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    padding-left: 324px;
+}
+ */
