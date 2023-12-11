@@ -27,8 +27,9 @@ a {
     width: 90%;
 }
 
-/* -- Mobile First -- */
-/* - Header - */
+/* --- Mobile First --- */
+
+/* -- Header -- */
 
 #logo {
     width: 150px;
@@ -76,24 +77,26 @@ nav {
 
 button.navbar-toggler {
     border: none;
-    padding: 0;
+    padding: 5px;
 }
 
 .custom_a {
     color: #f3dcb0;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', sans-serif;
     font-size: 1rem;
     text-shadow: 0.5px 0.5px 1px #4d4d4d;
 }
 
-/* - Main - */
+/* -- Main -- */
 
+/* - Image + Bouton - */
 .img-container {
     align-items: center;
     display:flex;
     justify-content: center;
     margin: 8% auto;
     padding-top: 30px;;
+    position: relative;
     width: 100%;
 }
 
@@ -104,6 +107,19 @@ button.navbar-toggler {
     width: 500px;
 }
 
+.votre-bouton {
+    background-color: #f3dcb0;
+    border-radius: 5px;
+    bottom: 25px; 
+    box-shadow: 1px 1px 10px #4d4d4d; 
+    color: #000;
+    font-family: 'Abril Fatface', sans-serif;
+    padding: 10px;
+    position: absolute;
+    right: 130px; 
+}
+
+/* - Open Agenda - */
 .agenda {
     margin: auto;
     width: 80%;
@@ -119,8 +135,51 @@ iframe {
     visibility: hidden;
 }
 
+/* - Formulaire Contact/Newsletter - */
+.form-container {
+    background-color: #f3dcb0;
+    display: flex;
+    flex-direction: row;
+    margin: 8% auto;
+    width: 90%;
+}
 
-/* -- Taille Desktop -- */
+.formulaire-infos {
+    width: 50%;
+}
+
+.formulaire-infos p,
+.formulaire-infos h4 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.formulaire-infos p {
+    padding-top: 30px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+
+.bouton-inscription {
+    margin-top: 10px;
+    width: 213px;
+}
+
+input {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 12px;
+    width: 213px;
+}
+
+
+
+/* --- Taille Desktop --- */
 
 /* - Navigation - */
 .nav-item :hover {
