@@ -17,14 +17,26 @@
             <h4>Gardons le contact !</h4>
         </div>
         <div class="formulaire">
-            <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" method="post">
-                <input type="text" placeholder="Prénom">
-                <input type="text" placeholder="Nom">
-                <input type="email" placeholder="Email">
-                <input type="submit" value="S'inscrire" class="bouton-inscription">
+            <form action="<?php echo esc_url(plugin_dir_url(__FILE__) . 'service/Elnaut_Database.php'); ?>" method="post">
+                <input type="hidden" name="action" value="save-friend">
+                <input type="text" name="prenom" placeholder="Prénom">
+                <input type="text" name="nom" placeholder="Nom">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="telephone" placeholder="Téléphone">
+                <input type="submit" name="action" value="S'inscrire" class="bouton-inscription">
             </form>
         </div>
     </div>
 </main>
 
 <?php get_footer() ?>
+
+<?php
+// Bloc de logique de traitement pour le formulaire public
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'save-friend') {
+    $db = new Elnaut_Database();
+    $db->save_friend();
+} else {
+    echo "Formulaire non soumis correctement";
+}
+?>

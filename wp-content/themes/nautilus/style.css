@@ -116,7 +116,7 @@ button.navbar-toggler {
     font-family: 'Abril Fatface', sans-serif;
     padding: 10px;
     position: absolute;
-    right: 130px; 
+    right: 155px; 
 }
 
 /* - Open Agenda - */
@@ -127,6 +127,7 @@ button.navbar-toggler {
 
 iframe {
     background-color: #fff;
+    border-radius: 5px;
     box-shadow: 1px 1px 25px #4d4d4d;
     height: 300px;
 }
@@ -156,7 +157,7 @@ iframe {
 }
 
 .formulaire-infos p {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .formulaire {
