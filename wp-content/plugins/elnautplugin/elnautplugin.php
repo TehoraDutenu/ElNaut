@@ -9,6 +9,7 @@ Version: 1.0
 require_once plugin_dir_path(__FILE__) . 'service/Elnaut_Database.php';
 require_once plugin_dir_path(__FILE__) . 'Friends_List.php';
 
+
 class ElNaut
 {
     public function __construct()
@@ -93,7 +94,19 @@ class ElNaut
 }
 new ElNaut();
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'save-friend') {
     $db = new Elnaut_Database();
     $db->save_friend();
+
+    // Vérification de la provenance du formulaire
+    if (isset($_SESSION['form_source']) && $_SESSION['form_source'] === 'home') {
+        // Redirection vers la page d'accueil uniquement si le formulaire provient de la page d'accueil
+        header('Location: ' . home_url('/'));
+        exit;
+    } else {
+        // Redirection par défaut vers la liste des amis dans le back office
+        header('Location: ' . admin_url('admin.php?page=friends'));
+        exit;
+    }
 }

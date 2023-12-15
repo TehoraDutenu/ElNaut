@@ -49,18 +49,29 @@ class Elnaut_Database
                 'email' => sanitize_email($_POST['email']),
                 'telephone' => sanitize_text_field($_POST['telephone'])
             );
-            $row = $wpdb->get_row($wpdb->prepare("SELECT * FROM {$wpdb->prefix}elnaut_friends WHERE email = %s", $data['email']));
-            if ($row == null) {
-                $wpdb->insert("{$wpdb->prefix}elnaut_friends", $data);
-
-                // Ajout du script de redirection JavaScript
-                echo '<script>window.location.href = "' . admin_url('admin.php?page=friends') . '";</script>';
-                exit;
-            } else {
-                echo "Vous êtes déjà inscrit";
-            }
+            $wpdb->get_row($wpdb->prepare("SELECT * FROM {$wpdb->prefix}elnaut_friends WHERE email = %s", $data['email']));
+            $wpdb->insert("{$wpdb->prefix}elnaut_friends", $data);
+        } else {
+            echo "Vous êtes déjà inscrit";
         }
+        // if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'save-friend') {
+        //     $db = new Elnaut_Database();
+        //     $db->save_friend();
+
+        //     // Vérification de la provenance du formulaire
+        //     $referer = wp_get_referer();
+        //     if ($referer && strpos($referer, home_url('/')) === 0) {
+        //         // Redirection vers la page d'accueil uniquement si le formulaire provient de la page d'accueil
+        //         wp_redirect(home_url('/'));
+        //         exit;
+        //     } else {
+        //         // Redirection par défaut vers la liste des amis dans le back office
+        //         wp_redirect(admin_url('admin.php?page=friends'));
+        //         exit;
+        //     }
+        // }
     }
+
 
     public function delete_friend($ids)
     {

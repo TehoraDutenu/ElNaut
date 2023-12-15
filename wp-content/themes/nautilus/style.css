@@ -6,12 +6,21 @@ Version: 1.0
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    background-image: url("images/Group.png");
+    background-image: url('images/funny-patern.jpg');
     background-repeat: repeat-y;
     background-attachment: local;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
+    height: 150vh;
     margin: 0;
     padding: 0;
 }
@@ -21,9 +30,12 @@ a {
     text-decoration: none;
 }
 
+main {
+    box-sizing: content-box;
+}
+
 .main-container {
     margin: auto;
-    height: 150vh;
     width: 90%;
 }
 
@@ -32,41 +44,50 @@ a {
 /* -- Header -- */
 
 #logo {
-    width: 150px;
-    margin: 5%;
+    margin: 12%;
+    padding-top: 10%;
+    width: 200px;
 }
 
 header {
-    background-color: #f05a28;
+    background-color: #000;
     box-shadow: 1px 1px 15px #4d4d4d; 
-    height: 200px;
+    height: 220px;
+    width: 100%;
+}
+
+.custom_header {
     width: 100%;
 }
 
 .header h3 {
     color: #f3dcb0;
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 900;
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.2rem;
+    font-weight: 500;
     margin-bottom: 0;
-    margin-left: 30px;
+    margin-left: 13%;
+    padding-top: 12%;
     text-shadow: 1px 1px 2px black;
 }
 
 .header em {
     color: #f3dcb0;
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding-left: 32%;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 35%;
     text-shadow: 0.5px 0.5px 1px #4d4d4d;
 }
 
 /* - Navigation - */
 
+/* .toggle-nav {
+    padding: 0;
+} */
+
 nav {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0 !important;
 }
 
 .nav-item {
@@ -77,13 +98,15 @@ nav {
 
 button.navbar-toggler {
     border: none;
+    margin-right: 11%;
     padding: 5px;
 }
 
 .custom_a {
     color: #f3dcb0;
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 1rem;
+    font-family: Lato, sans-serif;
+    font-size: 0.9rem;
+    padding-bottom: 0 !important;
     text-shadow: 0.5px 0.5px 1px #4d4d4d;
 }
 
@@ -94,7 +117,7 @@ button.navbar-toggler {
     align-items: center;
     display:flex;
     justify-content: center;
-    margin: 8% auto;
+    margin: auto;
     padding-top: 30px;;
     position: relative;
     width: 100%;
@@ -113,23 +136,23 @@ button.navbar-toggler {
     bottom: 25px; 
     box-shadow: 1px 1px 10px #4d4d4d; 
     color: #000;
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: Lato, sans-serif;
     padding: 10px;
     position: absolute;
     right: 155px; 
 }
 
 /* - Open Agenda - */
-.agenda {
-    margin: auto;
-    width: 80%;
+.agenda-container {
+    margin: 5% auto;
+    width: 95%;
 }
 
 iframe {
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 1px 1px 25px #4d4d4d;
-    height: 300px;
+    height: 400px;
 }
 
 .action-link {
@@ -138,44 +161,105 @@ iframe {
 
 /* - Formulaire Contact/Newsletter - */
 .form-container {
-    background-color: #f3dcb0;
+    align-items: center;
+    background-color: #fa9404;
+    border-radius: 30%;
+    box-shadow: 1px 1px 25px #4d4d4d; 
     display: flex;
-    flex-direction: row;
-    margin: 8% auto;
-    width: 90%;
+    flex-direction: column;
+    height: auto;
+    margin: 5% auto;
+    padding: 10%;
+    width: 100%;
 }
 
 .formulaire-infos {
-    width: 50%;
+    width: 100%;
 }
 
 .formulaire-infos p,
 .formulaire-infos h4 {
-    font-family: 'Abril Fatface', sans-serif;
-    font-weight: 200;
+    font-family: 'Abril Fatface', serif;
+    font-weight: 100;
     text-align: center;
 }
 
 .formulaire-infos p {
-    padding-top: 40px;
+    margin-bottom: 0.5rem;
 }
 
 .formulaire {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding-top: 5%;
     width: 50%;
 }
 
 .bouton-inscription {
-    margin-top: 10px;
-    width: 213px;
+    border-radius: 5px;
+    margin-top: 8px;
+    width: 220px;
 }
 
 input {
-    font-family: 'Abril Fatface', sans-serif;
+    font-family: Lato, sans-serif;
     font-size: 12px;
-    width: 213px;
+    margin-bottom: 3px;
+    width: 220px;
+}
+
+/* - Footer - */
+
+footer {
+    background-color: #000;
+    bottom: 0;
+    box-shadow: 1px 1px 15px #4d4d4d; 
+    color: #f3dcb0;    
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    height: 125px;
+    position:fixed;
+    text-align: center;
+    width: 100%;
+}
+
+footer ul {
+    margin-bottom: 0 !important;
+    padding-left: 0;
+    padding-top: 5%;
+}
+
+footer li {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    list-style-type: none;
+}
+
+
+footer li a {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.copyright {
+    background-color: #fd3501;
+    bottom: 0;
+    height: 25px;
+    position: fixed;
+    width: 100%;
+}
+
+.text-copyright {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 3px;
+    text-align: center;
 }
 
 
