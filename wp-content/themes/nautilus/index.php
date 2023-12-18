@@ -1,21 +1,14 @@
-<?php get_header() ?>
-
 <?php
 session_start(); // Démarrez la session
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'save-friend') {
     $db = new Elnaut_Database();
     $db->save_friend();
-
-    // Stockez une variable de session pour indiquer la provenance du formulaire
-    $_SESSION['form_source'] = 'home';
-
-    // Utilisez JavaScript pour rediriger l'utilisateur vers la page d'accueil
-    echo '<script>window.location.href = "' . home_url('/') . '";</script>';
+    header("Location:" . get_home_url($blog_id = null, $path = '/', $scheme = null));
     exit;
 }
-
 ?>
+<?php get_header() ?>
 
 <main>
     <div class="main-container">
@@ -49,5 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
     </div>
 </main>
 
-
 <?php get_footer() ?>
+
+<!-- if($envoi) header("location:ma_page_html.html"); -->

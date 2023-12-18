@@ -54,22 +54,6 @@ class Elnaut_Database
         } else {
             echo "Vous êtes déjà inscrit";
         }
-        // if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'save-friend') {
-        //     $db = new Elnaut_Database();
-        //     $db->save_friend();
-
-        //     // Vérification de la provenance du formulaire
-        //     $referer = wp_get_referer();
-        //     if ($referer && strpos($referer, home_url('/')) === 0) {
-        //         // Redirection vers la page d'accueil uniquement si le formulaire provient de la page d'accueil
-        //         wp_redirect(home_url('/'));
-        //         exit;
-        //     } else {
-        //         // Redirection par défaut vers la liste des amis dans le back office
-        //         wp_redirect(admin_url('admin.php?page=friends'));
-        //         exit;
-        //     }
-        // }
     }
 
 

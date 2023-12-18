@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
     <ul>
         <li><a href="#">Locations & Coworking</a></li>
         <li><a href="#">Activités & Événements</a></li>
