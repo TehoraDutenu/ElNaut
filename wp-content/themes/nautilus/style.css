@@ -24,8 +24,9 @@ body {
     background-attachment: local;
     background-position: center;
     background-size: cover; 
-    height: 150vh;
+    height: max-content;
     margin: 0;
+    margin-bottom: 40vw;
     padding: 0;
 }
 
@@ -39,6 +40,7 @@ main {
 }
 
 .main-container {
+    height: auto;
     margin: auto;
     width: 90%;
 }
@@ -50,7 +52,7 @@ main {
 header {
     background-color: #000;
     box-shadow: 1px 1px 15px #4d4d4d; 
-    height: 26vh;
+    height: 50vw;
     width: 100%;
 }
 
@@ -59,28 +61,28 @@ header {
 }
 
 #logo {
-    margin-left: 4vh;
-    padding-top: 2vh;
-    width: 200px;
+    margin-left: 8vw;
+    padding-top: 3vw;
+    width: 50vw;
 }
 
 .header h3 {
     color: #f3dcb0;
     font-family: 'Abril Fatface', serif;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 0;
-    margin-left: 11vh;
-    padding-top: 3vh;
+    margin-left: 15vw;
+    padding-top: 5vw;
     text-shadow: 1px 1px 2px black;
 }
 
 .header em {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    padding-left: 35%;
+    padding-left: 21vw;
     text-shadow: 0.5px 0.5px 1px #4d4d4d;
 }
 
@@ -91,8 +93,7 @@ nav {
 }
 
 nav .nav-item {
-    justify-content: start;
-    margin-left: 20px;
+    margin-left: 14vw;
 }
 
 
@@ -105,14 +106,22 @@ button.navbar-toggler {
 .custom_a {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
     padding-bottom: 0 !important;
-    padding-left: 11vh;
     text-shadow: 0.5px 0.5px 1px #4d4d4d;
 }
 
 
 /* * -- Main -- * */
+
+@media (max-width: 576px) {
+    .img-container,
+    .index-img {
+        display: none;
+    }
+}
 /* - Open Agenda - */
 .agenda-container {
     margin: 5% auto;
@@ -120,14 +129,15 @@ button.navbar-toggler {
 }
 
 iframe {
-    background-color: blanchedalmond;
+    background-color: #fbf3e7;
     border-radius: 8px;
     box-shadow: 1px 1px 25px #4d4d4d;
-    height: 400px;
+    height: 100vw;
+    padding: 2vw;
 }
 
 .action-link {
-    visibility: hidden;
+    visibility: collapse;
 }
 
 
@@ -135,13 +145,13 @@ iframe {
 .form-container {
     align-items: center;
     background-color: #fa9404;
-    border-radius: 30%;
-    box-shadow: 1px 1px 25px #4d4d4d; 
+    border-radius: 48%;
+    box-shadow: 1px 1px 10px #4d4d4d; 
     display: flex;
     flex-direction: column;
     height: auto;
-    margin: 5% auto;
-    padding: 10%;
+    margin: 10% auto;
+    padding: 5vw;
     width: 100%;
 }
 
@@ -164,21 +174,21 @@ iframe {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
+    padding-top: 2vw;
     width: 50%;
 }
 
 .bouton-inscription {
     border-radius: 5px;
     margin-top: 8px;
-    width: 220px;
+    width: 45vw;
 }
 
 input {
     font-family: Lato, sans-serif;
-    font-size: 12px;
-    margin-bottom: 3px;
-    width: 220px;
+    font-size: 1rem;
+    margin-bottom: 1vw;
+    width: 45vw;
 }
 
 
@@ -188,103 +198,126 @@ input {
     background-color: #000;
     bottom: 0;
     box-shadow: 1px 1px 15px #4d4d4d; 
-    color: #f3dcb0;    
     display: flex;
     flex-direction: row;
-    font-family: Lato, sans-serif;
-    font-size: 12px;
-    height: 16vh;
+    height: 30vw;
     text-align: center;
     width: 100%;
 }
 
 .address {
-    font-family: Lato, sans-serif;
-    font-size: small;
-    padding-top: 2vh;
+    color: #f3dcb0;    
+    font-family: 'Lato', sans-serif;
+    padding-top: 4.5vw;
     width: 50%;
+}
+
+.address h5 {
+    color: #f3dcb0;    
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.5rem;
+}
+
+.address address {
+    color: #f3dcb0;    
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
 }
 
 .footer-menu-container {
-    padding-top: 0.8vh;
+    padding-right: 9.9vw;
+    padding-top: 5vw;
     width: 50%;
 }
 
-#menu-footer-menu .custom_a {
+#menu-footer-menu {
     padding-left: 0 !important;
-    padding-right: 5vh;
 }
 
-footer ul {
-    margin-bottom: 0 !important;
-    padding-left: 0;
-    padding-top: 5%;
+#menu-footer-menu .custom_a {
+    color: #f3dcb0;    
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
 }
 
-footer li {
-    color: #f3dcb0;
-    font-family: Lato, sans-serif;
-    list-style-type: none;
-}
-
-
-footer li a {
-    color: #f3dcb0;
-    font-family: Lato, sans-serif;
-    font-weight: bold;
-    list-style-type: none;
-    text-decoration: none;
-}
 
 .copyright {
     background-color: #fd3501;
     bottom: 0;
-    height: 25px;
-    position: fixed;
+    height: 6vw;
+    position: absolute;
     width: 100%;
 }
 
 .text-copyright {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding-top: 3px;
+    padding-top: 0.5vw;
     text-align: center;
 }
 
+
 /*** *** TAILLE TABLETTE (width-max: 768px) *** ***/
 
-/** -- Image + Bouton -- **/
-.img-container {
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 30px;;
-    position: relative;
-    width: 100%;
-}
+@media (min-width: 577px) and (max-width: 767px) {
 
-.index-img {
-    box-shadow: 1px 1px 25px #4d4d4d; 
-    height: auto;
-    margin: auto;
-    width: 500px;
-}
+    /* * -- Header -- * */
+    header {
+        height: 45vw;
+    }
 
-.votre-bouton {
-    background-color: #f3dcb0;
-    border-radius: 5px;
-    bottom: 25px; 
-    box-shadow: 1px 1px 10px #4d4d4d; 
-    color: #000;
-    font-family: Lato, sans-serif;
-    padding: 10px;
-    position: absolute;
-    right: 155px; 
-}
+    i {
+        font-size: 5vw;
+    }
+    
+    /* #logo {
+        margin-left: 4vh;
+        padding-top: 2vh;
+        width: 40vw;
+    } */
+    
+    .header h3 {
+        color: #f3dcb0;
+        font-family: 'Abril Fatface', serif;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 0;
+        margin-left: 11vh;
+        padding-top: 3vh;
+        text-shadow: 1px 1px 2px black;
+    }
+    
+    .header em {
+        color: #f3dcb0;
+        font-family: Lato, sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        padding-left: 35%;
+        text-shadow: 0.5px 0.5px 1px #4d4d4d;
+    }
+    
+    
+    /** -- Image + Bouton -- **/
+    .img-container {
+        margin: auto;
+        padding-top: 2vh;;
+        position: relative;
+        width: 100vw;
+    }
 
+    .index-img {
+        box-shadow: 1px 1px 25px #4d4d4d; 
+        height: auto;
+        margin: auto;
+        position: relative;
+        visibility: visible;
+        width: 100vw;
+    }
+
+
+}
 
 /*** *** TAILLE DESKTOP (width-min: 992px) *** ***/
 
