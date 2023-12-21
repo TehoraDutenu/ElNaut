@@ -32,7 +32,7 @@ class Simple_menu extends Walker_Nav_Menu
         $permalink = $data_object->url;
 
         $output .= "<div class='nav-item'>";
-        $output .= "<a class='nav-link custom_a' href='$permalink'>$title</a>";
+        $output .= "<a class='nav-link custom_a' href='$permalink'><em>$title</em></a>";
     }
     public function end_el(&$output, $data_object, $depth = 0, $args = null)
     {

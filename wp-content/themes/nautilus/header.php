@@ -56,13 +56,5 @@
                     <em> <?php echo get_bloginfo('description') ?></em>
                 </a>
             </div>
-            <?php
-            // wp_nav_menu(array(
-            //    "theme_location" => "menu-sup",
-            //    "menu_class" => "custom-menu",
-            //    "container" => false,
-            //    "walker" => new Simple_menu()
-            //)) 
-            ?>
         </div>
     </header>
