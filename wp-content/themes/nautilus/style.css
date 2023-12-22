@@ -49,6 +49,7 @@ main {
 /*** *** MOBILE FIRST (max-width: 576 px) *** ***/
 
 /* * -- Header -- * */
+
 header {
     background-color: #000;
     box-shadow: 1px 1px 15px #4d4d4d; 
@@ -73,10 +74,10 @@ header {
     font-weight: 500;
     margin-bottom: 1vw;
     margin-left: 12vw;
-    padding-top: 1vw;
+    padding-top: 4vw;
 }
 
-.header em {
+.header em.subtitle {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
     font-size: 1.2rem;
@@ -91,10 +92,6 @@ nav {
     padding: 0 !important;
 }
 
-nav .nav-item {
-    margin-left: -5vw;
-}
-
 
 button.navbar-toggler {
     border: none;
@@ -102,13 +99,14 @@ button.navbar-toggler {
     margin-top: 8vw;
 }
 
-.custom_a {
+.custom_a em {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
     padding-bottom: 0 !important;
+    padding-left: 10vw;
 }
 
 
@@ -195,6 +193,7 @@ input {
 
 
 /* * -- Footer -- * */
+
 .footer {
     position:absolute;
     background-color: #000;
@@ -265,6 +264,7 @@ input {
 
 @media (min-width: 577px) and (max-width: 767px) {
 
+
     /* * -- Header -- * */
 
     header {
@@ -284,7 +284,7 @@ input {
         padding-top: 3vw;
     }
     
-    .header em {
+    .header em.subtitle {
         font-size: 1.5rem;
         font-weight: 300;
         padding-left: 20vw;
@@ -301,19 +301,16 @@ input {
         font-size: 5vw;
     }
 
-    nav .nav-item {
-        margin-left: -5vw;
-    }
-
     nav .nav-item:last-of-type {
         padding-top: 1vw;
     }
 
-    .custom_a {
+    .custom_a em {
         font-size: 1.5rem;
-        font-weight: 300;
+        margin-left: 5vw;
         padding-bottom: 0 !important;
     }
+
 
     /* * -- Main -- * */
 
@@ -360,6 +357,7 @@ input {
         width: 65vw;
     }
     
+
     /* * -- Footer -- * */
 
     .footer {
@@ -395,6 +393,10 @@ input {
     }
 }
 
+/******************** COMMIT 'SECOND' OK ********************/
+
+
+
 /*** *** TAILLE TABLETTE PAYSAGE ET 13" (width-min: 768px) *** ***/
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -402,6 +404,7 @@ input {
     /* * -- Header -- * */
 
     .custom_header {
+        height: 100%;
         flex-direction: column-reverse !important;
     }
 
@@ -411,16 +414,15 @@ input {
     } 
 
     .header h3 {
-        font-size: 3.5rem;
+        font-size: 5rem;
         margin-bottom: 0.5vw;
-        margin-left: 13vw;
-        padding-top: 3vw;
+        margin-left: 15vw;
+        padding-top: 13vw;
     }
     
-    .header em {
-        font-size: 1.5rem;
-        font-weight: 300;
-        padding-left: 20vw;
+    .header em.subtitle {
+        font-size: 2rem;
+        padding-left: 23vw;
     }
 
 
@@ -428,29 +430,17 @@ input {
     ul#menu-menu-principal {
         display: flex;
         flex-direction: row;
+        padding-top: 5vw;
     }
 
-    button.navbar-toggler {
-        margin-right: 5vw;
-        margin-top: 8vw;
-    }    
-
-    i {
-        font-size: 5vw;
+    .custom_a em {
+        font-size: 2rem;
+        margin-right: 2vw;
+        padding-left: O !important;
     }
 
     nav .nav-item {
-        margin-left: -5vw;
-    }
-
-    nav .nav-item:last-of-type {
-        padding-top: 1vw;
-    }
-
-    .custom_a {
-        font-size: 1.5rem;
-        font-weight: 300;
-        padding-bottom: 0 !important;
+        margin-left: 0;
     }
 
 }

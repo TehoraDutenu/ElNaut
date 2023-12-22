@@ -53,7 +53,7 @@
 
                 <a class="title" href="<?php echo get_bloginfo('wpurl') ?>">
                     <h3> <?php echo get_bloginfo('name') ?> </h3>
-                    <em> <?php echo get_bloginfo('description') ?></em>
+                    <em class="subtitle"> <?php echo get_bloginfo('description') ?></em>
                 </a>
             </div>
         </div>
