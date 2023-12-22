@@ -71,9 +71,9 @@ header {
     font-family: 'Abril Fatface', serif;
     font-size: 2.5rem;
     font-weight: 500;
-    margin-bottom: 0;
-    margin-left: 15vw;
-    padding-top: 5vw;
+    margin-bottom: 1vw;
+    margin-left: 12vw;
+    padding-top: 1vw;
 }
 
 .header em {
@@ -81,7 +81,8 @@ header {
     font-family: Lato, sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
-    padding-left: 21vw;
+    padding-left: 16vw;
+    margin-top: 1.5vw;
 }
 
 
@@ -91,14 +92,14 @@ nav {
 }
 
 nav .nav-item {
-    margin-left: 14vw;
+    margin-left: -5vw;
 }
 
 
 button.navbar-toggler {
     border: none;
-    margin-right: 3vw;
-    margin-top: 10vw;
+    margin-right: 5vw;
+    margin-top: 8vw;
 }
 
 .custom_a {
@@ -113,6 +114,7 @@ button.navbar-toggler {
 
 /* * -- Main -- * */
 
+/* - Image - */
 @media (max-width: 576px) {
     .img-container,
     .index-img {
@@ -395,7 +397,7 @@ input {
 
 /*** *** TAILLE TABLETTE PAYSAGE ET 13" (width-min: 768px) *** ***/
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1200px) {
 
     /* * -- Header -- * */
 
