@@ -403,6 +403,11 @@ input {
 
     /* * -- Header -- * */
 
+    header {
+        height: 32vw;
+        margin-bottom: 3vw;
+    }
+
     .custom_header {
         height: 100%;
         flex-direction: column-reverse !important;
@@ -410,19 +415,20 @@ input {
 
     #logo {
         margin-left: 5vh;
-        padding-top: 3vh;
+        padding-top: 2vw;
+        width: 26vw;
     } 
 
     .header h3 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: 0.5vw;
-        margin-left: 15vw;
-        padding-top: 13vw;
+        margin-left: 26vw;
+        padding-top: 8vw;
     }
     
     .header em.subtitle {
         font-size: 2rem;
-        padding-left: 23vw;
+        padding-left: 30vw;
     }
 
 
@@ -430,13 +436,14 @@ input {
     ul#menu-menu-principal {
         display: flex;
         flex-direction: row;
-        padding-top: 5vw;
+        margin-left: 8vw;
+        padding-top: 4vw;
     }
 
     .custom_a em {
         font-size: 2rem;
-        margin-right: 2vw;
-        padding-left: O !important;
+        margin-right: 2.5vw;
+        padding-left: inherit;
     }
 
     nav .nav-item {
