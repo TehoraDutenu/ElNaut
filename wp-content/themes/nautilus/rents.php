@@ -1,21 +1,14 @@
 <?php
 /*
- * Template Name: Page de Contact
+ * Template Name: Rents
  */
 ?>
 
 <?php get_header() ?>
 
-<main>
-    <header class="rents-page">
-        <h3>Embarquez à bord</h3>
-        <em>Tous les formats pour tous les besoins</em>
-    </header>
-    <div>
-        <div>
-            <?php get_template_part('espaces', 'rents'); ?>
-        </div>
-    </div>
+<main style="background-color: #f3dcb0;">
+    <h3>Embarquez à bord</h3>
+    <em>Tous les formats pour tous les besoins</em>
 </main>
 
 <?php get_footer() ?>
