@@ -6,6 +6,9 @@ Version: 1.0
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
+/********************************/
+/**** **** PAGE ACCUEIL **** ****/
+/********************************/
 
 /*** *** GÉNÉRAL *** ***/
 
@@ -19,7 +22,7 @@ html {
 }
 
 body {
-    background-image: url('images/funny-patern.jpg');
+    background-image: url('../images/funny-patern.jpg');
     background-repeat: repeat-y;
     background-attachment: local;
     background-position: center;
@@ -235,10 +238,10 @@ input {
     padding-left: 0 !important;
 }
 
-#menu-footer-menu .custom_a {
-    color: #f3dcb0;    
+#menu-footer-menu .nav-item .custom_a em {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
+    padding-left: 0 !important;
 }
 
 /* - Copyright - */
@@ -379,10 +382,10 @@ input {
 
     .footer-menu-container {
         padding-right: 5vw;
-        padding-top: 6vw;
+        padding-top: 7vw;
     }
 
-    #menu-footer-menu .custom_a {
+    #menu-footer-menu .nav-item .custom_a em {
         font-size: 1.5rem;
         margin-bottom: 1vw;
     }

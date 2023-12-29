@@ -1,0 +1,25 @@
+/**********************************/
+/**** **** PAGE LOCATIONS **** ****/
+/**********************************/
+
+/*** *** GÉNÉRAL *** ***/
+
+
+body.rents-body {
+    background-color: #f3dcb0;
+    background-image: none;
+    height: max-content;
+    margin: 0;
+    margin-bottom: 40vw;
+    padding: 0;
+}
+
+/* .rents-main {
+    background-color: #f3dcb0;
+    height: max-content;
+} */
+
+.rents-main-container {
+    width: 90%; 
+    margin: 0 auto;
+}

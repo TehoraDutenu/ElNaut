@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
     <!-- Style.css -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/style.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/style.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/rents.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/events.css"; ?>">
     <!-- Script Fontawesome -->
     <script src="https://kit.fontawesome.com/54fffc0b5a.js" crossorigin="anonymous"></script>
     <!-- Script Bootstrap -->

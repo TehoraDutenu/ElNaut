@@ -1,0 +1,90 @@
+/***********************************/
+/**** **** PAGE ÉVÉNEMENTS **** ****/
+/***********************************/
+
+
+/*** *** GÉNÉRAL *** ***/
+
+body.events-body {
+    background-color: #f3dcb0;
+    background-image: none;
+    height: max-content;
+    margin: 0;
+    margin-bottom: 40vw;
+    padding: 0;
+}
+
+.events-main-container {
+    height: auto;
+    margin: 0 auto;
+    /* overflow: scroll; */
+    width: 90%; 
+}
+
+
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
+
+/* * -- main -- * */
+
+.agenda,
+.map,
+.calendar {
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px #4d4d4d;
+    margin-top: 6vw;
+}
+
+/* - Carte - */
+.map-sync,
+.map-sync label,
+.map-sync input {
+    visibility: collapse;
+}
+
+/* - Calendrier - */
+.calendar {
+    background-color: #f7e9cf;
+    height: 50vw;
+}
+
+.calendar-canvas {
+    margin: auto;
+    padding-top: 5vw;
+    width: 71%;
+}
+
+.calhead,
+.calbody {
+    width: 70vw;
+}
+
+
+/*** *** TAILLE TABLETTE PORTRAIT (width-max: 768px) *** ***/
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+    /* - Calendrier - */
+    .calendar-canvas {
+        padding-top: 7vw;
+        width: 83%;
+    }
+    
+    .calhead,
+    .calbody {
+        width: 80vw;
+    }
+
+    .ccal {
+        font-size: 1rem !important;
+    }
+
+    /* - Carte - */
+    .map {
+        height: 53vw;
+    }
+    
+    .map-canvas {
+        height: 53vw;
+    }
+
+}
