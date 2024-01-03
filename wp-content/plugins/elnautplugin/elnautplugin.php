@@ -2,7 +2,7 @@
 /*
 Plugin Name: Elnaut Plugin
 Description: Plugin du Nautilus
-Author: Kalkom
+Author: Le Nautilus
 Version: 1.0
 */
 
@@ -79,11 +79,6 @@ class ElNaut
             echo "<div>" .
                 "<label for='email'>Email</label>" .
                 "<input type='email' name='email' id='email' class='widefat' required>" .
-                "</div>";
-
-            echo "<div>" .
-                "<label for='telephone'>Téléphone</label>" .
-                "<input type='text' name='telephone' id='telephone' class='widefat' required>" .
                 "</div>";
 
             echo "<div>" .

@@ -15,7 +15,6 @@ class Elnaut_Database
             prenom VARCHAR(255) NOT NULL,
             nom VARCHAR(255) NOT NULL,
             email VARCHAR(255) NOT NULL,
-            telephone VARCHAR(255) NOT NULL
         )");
 
         $count = $wpdb->get_var("SELECT COUNT (*) FROM {$wpdb->prefix}elnaut_friends");
@@ -25,7 +24,6 @@ class Elnaut_Database
                 'prenom' => 'Tehora',
                 'nom' => 'Dutenu',
                 'email' => 'tehoradutenu@gmail.com',
-                'telephone' => '0612345678'
             ));
         }
     }
@@ -47,7 +45,6 @@ class Elnaut_Database
                 'prenom' => sanitize_text_field($_POST['prenom']),
                 'nom' => sanitize_text_field($_POST['nom']),
                 'email' => sanitize_email($_POST['email']),
-                'telephone' => sanitize_text_field($_POST['telephone'])
             );
             $wpdb->get_row($wpdb->prepare("SELECT * FROM {$wpdb->prefix}elnaut_friends WHERE email = %s", $data['email']));
             $wpdb->insert("{$wpdb->prefix}elnaut_friends", $data);

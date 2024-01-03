@@ -63,13 +63,16 @@ header {
     width: 50vw;
 }
 
+.title {
+    text-align: center;
+}
+
 .header h3 {
     color: #f3dcb0;
     font-family: 'Abril Fatface', serif;
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 1vw;
-    margin-left: 12vw;
     padding-top: 4vw;
 }
 
@@ -78,7 +81,6 @@ header {
     font-family: Lato, sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
-    padding-left: 16vw;
     margin-top: 1.5vw;
 }
 
@@ -94,6 +96,10 @@ button.navbar-toggler {
     margin-top: 8vw;
 }
 
+#menu-menu-principal {
+    text-align: center;
+}
+
 .custom_a em {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
@@ -101,7 +107,6 @@ button.navbar-toggler {
     font-style: italic;
     font-weight: 300;
     padding-bottom: 0 !important;
-    padding-left: 10vw;
 }
 
 
@@ -173,6 +178,7 @@ section.js_list_content {
 
 input {
     background-color: #fbf3e7;
+    border: none;
     font-family: Lato, sans-serif;
     font-size: 1rem;
     margin-bottom: 1vw;
@@ -181,6 +187,7 @@ input {
 }
 
 .bouton-inscription {
+    border: 0.1rem solid black;
     border-radius: 2px;
     margin-top: 1.8vw;
     width: 70vw;
@@ -223,7 +230,7 @@ input {
 
 .footer-menu-container {
     padding-right: 9.9vw;
-    padding-top: 4vw;
+    padding-top: 5vw;
     width: 50%;
 }
 
@@ -235,6 +242,7 @@ input {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
+    font-weight: 400;
     padding-left: 0 !important;
 }
 
@@ -250,9 +258,8 @@ input {
 .text-copyright {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-top: 0.3vw;
+    font-size: 0.8rem;
+    padding-top: 1.2vw;
     text-align: center;
 }
 
@@ -412,10 +419,6 @@ input {
         padding-top: 5vw;
         width: 30vw;
     } 
-
-    .title {
-        text-align: center;
-    }
 
     .header h3 {
         font-size: 3.5rem;

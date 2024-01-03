@@ -40,7 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
                     <input type="text" name="prenom" id="prenom" placeholder="Prénom">
                     <input type="text" name="nom" id="nom" placeholder="Nom">
                     <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="text" name="telephone" id="telephone" placeholder="Téléphone">
                     <input type="submit" name="send" value="S'inscrire" class="bouton-inscription">
                 </form>
             </div>
