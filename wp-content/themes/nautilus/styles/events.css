@@ -21,6 +21,11 @@ body.events-body {
     width: 90%; 
 }
 
+.event-text .metas #date {
+    color: #fd3501;
+    font-size: 1.5rem;
+}
+
 
 /*** *** MOBILE FIRST (max-width: 576 px) *** ***/
 
@@ -41,6 +46,10 @@ body.events-body {
     visibility: collapse;
 }
 
+.map {
+    height: 52vw;
+}
+
 /* - Calendrier - */
 .calendar {
     background-color: #f7e9cf;
@@ -56,6 +65,30 @@ body.events-body {
 .calhead,
 .calbody {
     width: 70vw;
+}
+
+/* - Vers Rents - */
+.rents-linking {
+    margin-top: 7vw;
+    text-align: center;
+}
+
+.rents-linking-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.5rem;
+    padding-top: 3vw;
+}
+
+.rents-linking-button {
+    background-color: #f7e9cf;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #4d4d4d;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 5vw;
+    padding: 1vw;
 }
 
 
@@ -85,6 +118,15 @@ body.events-body {
     
     .map-canvas {
         height: 53vw;
+    }
+
+    /* - Vers Rents - */
+    .rents-linking-title {
+        padding-top: 0;
+    }
+
+    .rents-linking-button {
+        margin-top: 3vw;
     }
 
 }

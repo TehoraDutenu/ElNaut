@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
 
     <div class="main-container">
         <div class="agenda-container">
-            <iframe style="width:100%;" frameborder="0" scrolling="yes" allowtransparency="allowtransparency" class="cibulFrame cbpgbdy" data-oabdy src="//openagenda.com/agendas/21429945/embeds/4880713/events?lang=fr" data-lang="fr"></iframe>
+            <iframe style="width:100%;" frameborder="0" scrolling="yes" allowtransparency="allowtransparency" class="cibulFrame cbpgbdy" data-oabdy src="//openagenda.com/agendas/64371698/embeds/19969799/events?lang=fr" data-lang="fr"></iframe>
             <script type="text/javascript" src="//openagenda.com/js/embed/cibulBodyWidget.js"></script>
         </div>
 
@@ -41,5 +41,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
 </main>
 
 <?php get_footer() ?>
-
-<!-- if($envoi) header("location:ma_page_html.html"); -->

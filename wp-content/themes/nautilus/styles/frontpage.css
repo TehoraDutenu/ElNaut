@@ -1,0 +1,478 @@
+
+/********************************/
+/**** **** PAGE ACCUEIL **** ****/
+/********************************/
+
+/*** *** GÉNÉRAL *** ***/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-image: url('../images/funny-patern.jpg');
+    background-repeat: repeat-y;
+    background-attachment: local;
+    background-position: center;
+    background-size: cover; 
+    height: max-content;
+    margin: 0;
+    margin-bottom: 40vw;
+    padding: 0;
+}
+
+a {
+    color: #f3dcb0;
+    text-decoration: none;
+}
+
+main {
+    box-sizing: content-box;
+}
+
+.main-container {
+    height: auto;
+    margin: auto;
+    width: 90%;
+}
+
+
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
+
+/* * -- Header -- * */
+
+header {
+    background-color: #000;
+    box-shadow: 1px 1px 15px #4d4d4d; 
+    height: 50vw;
+    width: 100%;
+}
+
+.custom_header {
+    width: 100%;
+}
+
+#logo {
+    margin-left: 8vw;
+    padding-top: 3vw;
+    width: 50vw;
+}
+
+.header h3 {
+    color: #f3dcb0;
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1vw;
+    margin-left: 12vw;
+    padding-top: 4vw;
+}
+
+.header em.subtitle {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 16vw;
+    margin-top: 1.5vw;
+}
+
+
+/* - Navigation - */
+nav {
+    padding: 0 !important;
+}
+
+
+button.navbar-toggler {
+    border: none;
+    margin-right: 5vw;
+    margin-top: 8vw;
+}
+
+.custom_a em {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 0 !important;
+    padding-left: 10vw;
+}
+
+
+/* * -- Main -- * */
+
+/* - Image - */
+@media (max-width: 576px) {
+    .img-container,
+    .index-img {
+        display: none;
+    }
+}
+
+/* - Open Agenda - */
+.agenda-container {
+    margin: 5vw auto;
+    width: 100%;
+}
+
+iframe {
+    background-color: #fbf3e7;
+    border-radius: 8px;
+    box-shadow: 1px 1px 25px #4d4d4d;
+    height: 100vw;
+    padding: 2vw;
+}
+
+section.js_list_content {
+    margin: auto;
+    width: 90%;
+}
+
+.action-link {
+    visibility: collapse;
+}
+
+
+/* - Formulaire Newsletter - */
+.form-container {
+    align-items: center;
+    background-color: #fd3501;
+    border-radius: 48%;
+    box-shadow: 1px 1px 10px #4d4d4d; 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 10vw auto;
+    padding: 5vw;
+    width: 100%;
+}
+
+.formulaire-infos {
+    width: 100%;
+}
+
+.formulaire-infos p,
+.formulaire-infos h4 {
+    font-family: 'Abril Fatface', serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.formulaire-infos p {
+    margin-bottom: 0.5rem;
+}
+
+.formulaire {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+    width: 50%;
+}
+
+input {
+    background-color: #fbf3e7;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1vw;
+    padding-left: 1vw;
+    width: 45vw;
+}
+
+.bouton-inscription {
+    border-radius: 10px;
+    margin-top: 1.8vw;
+    width: 45vw;
+}
+
+
+/* * -- Footer -- * */
+
+.footer {
+    position:absolute;
+    background-color: #000;
+    bottom: 0;
+    box-shadow: 1px 1px 15px #4d4d4d; 
+    display: flex;
+    flex-direction: row;
+    height: 30vw;
+    text-align: center;
+    width: 100%;
+}
+
+.address {
+    color: #f3dcb0;    
+    font-family: 'Lato', sans-serif;
+    padding-top: 4.5vw;
+    width: 50%;
+}
+
+.address h5 {
+    color: #f3dcb0;    
+    font-family: 'Abril Fatface', serif;
+    font-size: 1.5rem;
+}
+
+.address address {
+    color: #f3dcb0;    
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.footer-menu-container {
+    padding-right: 9.9vw;
+    padding-top: 5vw;
+    width: 50%;
+}
+
+#menu-footer-menu {
+    padding-left: 0 !important;
+}
+
+#menu-footer-menu .nav-item .custom_a em {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    padding-left: 0 !important;
+}
+
+/* - Copyright - */
+.copyright {
+    background-color: #fd3501;
+    bottom: 0;
+    height: 6vw;
+    position: absolute;
+    width: 100%;
+}
+
+.text-copyright {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 0.5vw;
+    text-align: center;
+}
+
+
+/*** *** TAILLE TABLETTE PORTRAIT (width-max: 768px) *** ***/
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+    /* * -- Header -- * */
+
+    header {
+        height: 45vw;
+    }
+
+    #logo {
+        margin-left: 4vh;
+        padding-top: 2vh;
+        width: 39vw;
+    } 
+    
+    .header h3 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5vw;
+        margin-left: 13vw;
+        padding-top: 3vw;
+    }
+    
+    .header em.subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-left: 20vw;
+    }
+
+
+    /* - Navigation - */
+    button.navbar-toggler {
+        margin-right: 5vw;
+        margin-top: 8vw;
+    }    
+
+    i {
+        font-size: 5vw;
+    }
+
+    nav .nav-item:last-of-type {
+        padding-top: 1vw;
+    }
+
+    .custom_a em {
+        font-size: 1.5rem;
+        margin-left: 5vw;
+        padding-bottom: 0 !important;
+    }
+
+
+    /* * -- Main -- * */
+
+    /* - Image - */
+    .img-container {
+        padding-top: 2vh;;
+        position: relative;
+        width: 100vw;
+    }
+
+    .index-img {
+        box-shadow: 1px 1px 25px #4d4d4d; 
+        height: auto;
+        visibility: visible;
+        width: 100%;
+    }
+
+    /* - Formulaire - */
+    .form-container {
+        border-radius: 15%;
+        margin: 5vw auto;
+    }
+            
+    .formulaire-infos p {
+        font-size: 1.5rem;
+    }
+
+    .formulaire-infos h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+        
+    input {
+        font-size: 1.5rem;
+        height: 6vw;
+        margin-bottom: 1.5vw;
+        padding-left: 2vw;
+        width: 65vw;
+    }
+    
+    .bouton-inscription {
+        font-size: 1.7rem;
+        margin-top: 2vw;
+        width: 65vw;
+    }
+    
+
+    /* * -- Footer -- * */
+
+    .footer {
+        height: 35vw;
+    }
+
+    .address {
+        padding-left: 1vw;
+        padding-top: 5.5vw;
+    }
+
+    .address h5 {
+        font-size: 2.5rem;
+    }
+
+    .address address {
+        font-size: 1.5rem;
+    }
+
+    .footer-menu-container {
+        padding-right: 5vw;
+        padding-top: 7vw;
+    }
+
+    #menu-footer-menu .nav-item .custom_a em {
+        font-size: 1.5rem;
+        margin-bottom: 1vw;
+    }
+
+    /* - Copyright - */
+    .text-copyright {
+        font-size: 1.5rem;
+    }
+}
+
+
+/*** *** TAILLE TABLETTE PAYSAGE ET 13" (width-min: 768px) *** ***/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* * -- Header -- * */
+
+    header {
+        height: 42vw;
+        margin-bottom: 4vw;
+    }
+
+    .custom_header {
+        height: 100%;
+        flex-direction: column-reverse !important;
+    }
+
+    #logo {
+        margin-left: 3vh;
+        padding-top: 5vw;
+        width: 30vw;
+    } 
+
+    .title {
+        text-align: center;
+    }
+
+    .header h3 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5vw;
+        margin-left: 0;
+        padding-top: 10vw;
+    }
+    
+    .header em.subtitle {
+        font-size: 1.7rem;
+        padding-left: 0;
+    }
+
+
+    /* - Navigation - */
+    .navbar-collapse {
+        justify-content: center;
+    }
+    
+    ul#menu-menu-principal {
+        display: flex;
+        flex-direction: row;
+        margin-left: -3vw;
+        padding-top: 6vw;
+    }
+
+    .custom_a em {
+        font-size: 1.5rem;
+        margin-right: 0vw;
+        padding-left: inherit;
+    }
+
+    nav .nav-item {
+        margin-left: 0;
+    }
+}
+
+
+
+/*** *** TAILLE DESKTOP (width-min: 992px) *** ***/
+
+/* - Navigation - */
+.nav-item :hover {
+    color: hsl(0, 0%, 40%);
+    font-size: 20px;
+    text-shadow: 0.3px 0.3px 0.5px #f3dcb0;
+}
+
+/* .custom-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    padding-left: 324px;
+}
+ */
