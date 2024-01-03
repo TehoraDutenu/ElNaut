@@ -1,4 +1,8 @@
 <?php
+/*
+ * Template Name: Accueil
+ */
+
 session_start(); // Démarrez la session
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['action'] == 'save-friend') {
@@ -11,16 +15,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
 <?php get_header() ?>
 
 <main>
-    <div class="img-container">
-        <img src="<?php echo get_template_directory_uri() . '/images/imageSpace.jpg' ?>" class="index-img img-fluid" alt="Espaces du Nautilus">
-    </div>
+    <!-- Carousel -->
+    <?php
+    echo apply_shortcodes('[smartslider3 slider="2"]');
+    ?>
 
     <div class="main-container">
+
+        <!-- Agenda -->
         <div class="agenda-container">
             <iframe style="width:100%;" frameborder="0" scrolling="yes" allowtransparency="allowtransparency" class="cibulFrame cbpgbdy" data-oabdy src="//openagenda.com/agendas/64371698/embeds/19969799/events?lang=fr" data-lang="fr"></iframe>
             <script type="text/javascript" src="//openagenda.com/js/embed/cibulBodyWidget.js"></script>
         </div>
 
+        <!-- Formulaire newsletter -->
         <div class="form-container">
             <div class="formulaire-infos">
                 <p>Nous avons tant à faire ensemble</p>
