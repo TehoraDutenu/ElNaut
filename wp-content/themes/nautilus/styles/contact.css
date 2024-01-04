@@ -4,9 +4,9 @@
 
 
 
-/** -- Formulaire -- **/
+/** -- Main -- **/
 
-/* - Main*/
+/* - Formulaire - */
 .contact-main-container {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
@@ -14,17 +14,17 @@
     flex-direction: column;
     margin: 5vw auto;
     padding-bottom: 5vw;
-    padding-top: 5vw;
+    padding-top: 7vw;
     width: 90%;
 }
 
-.contact-title,
-.contact-subtitle {
+.contact-title {
     color: #f3dcb0;
     font-family: 'Abril Fatface', serif;
     margin: 1vw auto;
     text-shadow: 0 0 10px #000;
 }
+
 
 /* - Identité - */
 p {
@@ -34,7 +34,7 @@ p {
     text-shadow: 0 0 3px #fd3501;
 }
 
-label {
+.label {
     margin-bottom: 2vw;
 }
 
@@ -45,8 +45,9 @@ form.wpcf7-form {
 }
 
 form.wpcf7-form p:first-of-type {
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
+
  
 /* - Checkboxes - */
 .wpcf7-list-item {
@@ -55,7 +56,7 @@ form.wpcf7-form p:first-of-type {
 }
 
 .wpcf7-list-item:first-of-type {
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
 
 .wpcf7-list-item-label {
@@ -67,15 +68,34 @@ span.wpcf7-list-item input {
     width: 3vw;
 }
 
-/* - Message - */
-div.contact-message {
-    margin-bottom: 8vw;
-    margin-top: 2vw;
-}
-
 textarea {
     background-color: #fbf3e7;
     width: 70vw;
 }
 
+
+/* - Confirmation - */
+.contact-accept p {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.wpcf7-acceptance span {
+    margin-top: -1vw !important;
+}
+
+
 /* - Bouton - */
+.wpcf7-submit {
+    background-color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    margin-top: 3vw;
+}
+
+/* - Astérisque - */
+p.mentions {
+    font-size: 0.8rem;
+    margin-bottom: inherit;
+    padding-top: 5vw;
+}
