@@ -1,0 +1,81 @@
+/**********************************/
+/**** **** PAGE CONTACT **** ****/
+/**********************************/
+
+
+
+/** -- Formulaire -- **/
+
+/* - Main*/
+.contact-main-container {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    margin: 5vw auto;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    width: 90%;
+}
+
+.contact-title,
+.contact-subtitle {
+    color: #f3dcb0;
+    font-family: 'Abril Fatface', serif;
+    margin: 1vw auto;
+    text-shadow: 0 0 10px #000;
+}
+
+/* - Identité - */
+p {
+    color: #f3dcb0;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    text-shadow: 0 0 3px #fd3501;
+}
+
+label {
+    margin-bottom: 2vw;
+}
+
+form.wpcf7-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form.wpcf7-form p:first-of-type {
+    margin-top: 5vw;
+}
+ 
+/* - Checkboxes - */
+.wpcf7-list-item {
+    display: flex;
+    height: 5vw;
+}
+
+.wpcf7-list-item:first-of-type {
+    margin-top: 5vw;
+}
+
+.wpcf7-list-item-label {
+    width: 65vw;
+}
+
+span.wpcf7-list-item input {
+    background-color: #fbf3e7;
+    width: 3vw;
+}
+
+/* - Message - */
+div.contact-message {
+    margin-bottom: 8vw;
+    margin-top: 2vw;
+}
+
+textarea {
+    background-color: #fbf3e7;
+    width: 70vw;
+}
+
+/* - Bouton - */

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/frontpage.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/rents.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/events.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/contact.css"; ?>">
     <!-- Script Fontawesome -->
     <script src="https://kit.fontawesome.com/54fffc0b5a.js" crossorigin="anonymous"></script>
     <!-- Script Bootstrap -->
