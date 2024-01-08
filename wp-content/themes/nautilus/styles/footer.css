@@ -164,13 +164,42 @@ a.nav-link {
 
     /* * -- Footer -- * */
 
-    .address address {
-        margin-top: 2vw;
+    .footer {
+        height: 20vw;
     }
 
+    .address {
+        height: 20vw;
+    }
+
+    .address h5 {
+        font-size: 3.5vw;
+    }
+    
+    .address address {
+        font-size: 1.5vw;
+        margin-top: 1vw;
+    }
+    
     .footer-menu-container {
-        padding-right: 5vw;
-        padding-top: 7vw;
+        height: 20vw;
+        padding-right: 3vw;
+        padding-top: 5vw;
+        width: 50%;
+    }
+    
+    #menu-footer-menu .nav-item .custom_a em {
+        font-size: 1.5vw;
+    }
+
+
+    /* - Copyright - */
+    .copyright {
+        height: 3vw;
+    }
+
+    .text-copyright {
+        font-size: 1.5vw;
     }
 }
 
