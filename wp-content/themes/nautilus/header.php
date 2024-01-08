@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
     <!-- Style.css -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/style.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/header.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/frontpage.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/footer.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/rents.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/events.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/contact.css"; ?>">
@@ -29,7 +31,7 @@
     <header>
         <div class="header d-flex flex-row">
             <!-- Logo et titre -->
-            <a href="<?php echo get_bloginfo('wpurl') ?>">
+            <a class="logo-link" href="<?php echo get_bloginfo('wpurl') ?>">
                 <img class="img-fluid" id="logo" src="<?php echo get_template_directory_uri() . "/images/logoShadow2.png"; ?>" alt="logo">
             </a>
             <div class="d-flex flex-column custom_header">

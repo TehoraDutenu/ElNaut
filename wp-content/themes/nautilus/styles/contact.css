@@ -99,3 +99,22 @@ p.mentions {
     margin-bottom: inherit;
     padding-top: 5vw;
 }
+
+
+
+
+
+
+
+/*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    
+}
+
+
+/*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
+
+@media (min-width: 1280px) {
+    
+}
