@@ -179,7 +179,19 @@ input {
 /*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-    
+
+    /* .big-devices {
+        height: auto;
+        margin: auto;
+        width: 50vw;
+    } */
+
+    .main-container {
+        height: auto;
+        margin: auto;
+        width: 75%;
+    }
+        
 }
 
 

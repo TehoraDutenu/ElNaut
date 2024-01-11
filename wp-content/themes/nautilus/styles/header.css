@@ -178,7 +178,7 @@ a.nav-link {
 /*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/
 
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 
     /* * -- Header -- * */
 
@@ -250,6 +250,75 @@ a.nav-link {
 
 /*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
 
-@media (min-width: 1280px) {
-    
+@media screen and (min-width: 1280px) {
+
+    /* * -- Header -- * */
+
+    header {
+        height: 30vw;
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .custom_header {
+        flex-direction: column-reverse !important;
+        height: 21vw;
+        margin-left: 5vw;
+        margin-top: 5vw;
+        width: 70%;
+    }
+
+    a.logo-link {
+        height: 23vw;
+    }
+
+
+    #logo {
+        padding-top: 3vw;
+        width: 19vw;
+    }
+
+    .title {
+        margin-bottom: 5vw;
+    }
+
+    .header h3 {
+        font-size: 4vw;
+        margin-bottom: 0;         
+        padding-top: 0;
+    }
+
+    .header em.subtitle {
+        font-size: 1.5vw;
+    }
+
+    /* - Navigation - */
+    .toggle-nav {
+        margin-bottom: 2vw;
+        margin-right: 4vw;
+        margin-top: 0;
+        padding-bottom: 1vw;
+        padding-left: 0;
+        width: 49vw;
+    }
+
+
+    .custom_a em {
+        font-size: 1.5vw;
+        font-weight: 400;
+    }
+
+    .custom_a em:first-of-type {
+        padding-right: 5vw;
+    }
+
+    .custom_a em:hover {
+        color: #f3dcb0;
+        font-size: 2vw;
+        font-weight:600;
+        text-shadow: none;
+    }
+
 }

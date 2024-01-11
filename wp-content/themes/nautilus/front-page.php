@@ -16,9 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
 
 <main>
     <!-- Carousel -->
-    <?php
-    echo apply_shortcodes('[smartslider3 slider="2"]');
-    ?>
+    <div class="big-devices">
+        <?php
+        echo apply_shortcodes('[smartslider3 slider="2"]');
+        ?>
+    </div>
 
     <div class="main-container">
 
@@ -45,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
             </div>
         </div>
     </div>
+
 </main>
 
 <?php get_footer() ?>
