@@ -14,6 +14,9 @@ html {
     position: relative;
 }
 
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
+
+
 body {
     background-color: #fefefe;
     /* background-image: url('../images/funny-patern.jpg');
@@ -42,15 +45,8 @@ main {
     width: 90%;
 }
 
-/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
 
 /* * -- Main -- * */
-
-/* - Carousel - */
-/* div.n2_clear {
-    margin-top: 5vw;
-}   */
-
 
 /* - Open Agenda - */
 .agenda-container {
@@ -62,7 +58,7 @@ iframe {
     background-color: #fff;
     border-radius: 8px; 
     box-shadow: 1px 1px 3px #4d4d4d;
-    height: 100vw;
+    height: 70vw;
     padding: 2vw;
 }
 

@@ -3,39 +3,34 @@
 /***********************************/
 
 
+
+
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
+
 /*** *** GÉNÉRAL *** ***/
 
 body.events-body {
-    background-color: #f3dcb0;
+    background-color: #000;
     background-image: none;
     height: max-content;
     margin: 0;
-    margin-bottom: 40vw;
+    margin-bottom: 45vw;
     padding: 0;
 }
 
 .events-main-container {
     height: auto;
     margin: 0 auto;
-    /* overflow: scroll; */
     width: 90%; 
 }
 
-.event-text .metas #date {
-    color: #fd3501;
-    font-size: 1.5rem;
-}
-
-
-/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
 
 /* * -- main -- * */
 
 .agenda,
-.map,
+.map-canvas,
 .calendar {
     border-radius: 8px;
-    box-shadow: 1px 1px 10px #4d4d4d;
     margin-top: 6vw;
 }
 
@@ -47,48 +42,42 @@ body.events-body {
 }
 
 .map {
-    height: 52vw;
+    height: 48vw;
 }
 
-/* - Calendrier - */
-.calendar {
-    background-color: #f7e9cf;
-    height: 50vw;
+.map-canvas {
+    height: 48vw;
+    min-height: inherit !important;
 }
 
-.calendar-canvas {
-    margin: auto;
-    padding-top: 5vw;
-    width: 71%;
+.cibulMap {
+    height: 48vw;
 }
 
-.calhead,
-.calbody {
-    width: 70vw;
-}
 
 /* - Vers Rents - */
 .rents-linking {
-    margin-top: 7vw;
+    margin-top: 6vw;
     text-align: center;
 }
 
 .rents-linking-title {
-    font-family: 'Abril Fatface', serif;
-    font-size: 1.5rem;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 4.3vw;
     padding-top: 3vw;
 }
 
 .rents-linking-button {
-    background-color: #f7e9cf;
+    background-color: #fefefe;
     border-radius: 8px;
-    box-shadow: 1px 1px 5px #4d4d4d;
     color: #000;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Abril Fatface', serif;
+    font-size: 4vw;
     font-weight: 100;
-    margin-top: 5vw;
-    padding: 1vw;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    padding: 2.5vw;
 }
 
 
@@ -96,19 +85,19 @@ body.events-body {
 
 @media (min-width: 577px) and (max-width: 767px) {
 
-    /* - Calendrier - */
-    .calendar-canvas {
-        padding-top: 7vw;
-        width: 83%;
-    }
-    
-    .calhead,
-    .calbody {
-        width: 80vw;
+    /* - Vers Rents - */
+    .rents-linking {
+        margin-top: 9vw;
     }
 
-    .ccal {
-        font-size: 1rem !important;
+    .rents-linking-title {
+        font-size: 3.5vw;
+        padding-top: 0;
+    }
+
+    .rents-linking-button {
+        font-size: 3vw;
+        margin-top: 3vw;
     }
 
     /* - Carte - */
@@ -119,14 +108,78 @@ body.events-body {
     .map-canvas {
         height: 53vw;
     }
+}
+
+/*** *** TAILLE TABLETTE PAYSAGE ET 13" (width-min: 768px) *** ***/
+
+@media (min-width: 768px) and (max-width: 1023px) {
 
     /* - Vers Rents - */
-    .rents-linking-title {
-        padding-top: 0;
+    .rents-linking h4 {
+        font-size: 4vw;
     }
 
     .rents-linking-button {
-        margin-top: 3vw;
+        font-size: 3vw;
+    }
+}
+
+/*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    .events-body {
+        margin-bottom: 34vw;
     }
 
+    .events-main-container {
+        width: 70%;
+    }
+
+    /* - Vers Rents - */
+    .rents-linking-title {
+        font-size: 3.3vw;
+        padding-top: 2vw;
+    }
+
+    .rents-linking-button {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+        margin-top: 5vw;
+    }
+
+    /* - Carte - */
+    .js_sync_checkbox {
+        height: 0;
+    }
+}
+
+
+/*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
+
+@media (min-width: 1280px) {
+
+    body.events-body {
+        margin-bottom: 35vw;
+    }
+
+    .events-main-container {
+        width: 50%;
+    }
+
+    /* - Agenda - */
+    .agenda {
+        margin-top: 8vw;
+    }
+
+    /* - Vers Rents - */
+    .rents-linking-title {
+        font-size: 2vw;
+    }
+
+    .rents-linking-button {
+        font-size: 1.5vw;
+        margin-bottom: 2vw;
+        padding: 1.5vw;
+    }
 }

@@ -24,7 +24,7 @@
     color: #000;    
     font-family: 'Lato', sans-serif;
     height: 28vw;
-    padding-top: 4vw;
+    padding-top: 5vw;
     width: 50%;
 }
 
@@ -44,7 +44,7 @@
 .footer-menu-container {
     height: 28vw;
     padding-right: 7vw;
-    padding-top: 5vw;
+    padding-top: 6.5vw;
     width: 50%;
 }
 
@@ -89,12 +89,12 @@ a.nav-link {
     /* * -- Footer -- * */
 
     .footer {
-        height: 36vw;
+        height: 33vw;
     }
 
     .address {
         padding-left: 2vw;
-        padding-top: 5.5vw;
+        padding-top: 5vw;
     }
 
     .address h5 {
@@ -102,22 +102,24 @@ a.nav-link {
     }
 
     .address address {
-        font-size: 3.8vw;
+        font-size: 3vw;
+        margin-top: 0;
     }
 
     .footer-menu-container {
         padding-right: 5vw;
-        padding-top: 7vw;
+        padding-top: 8vw;
     }
 
     #menu-footer-menu .nav-item .custom_a em {
-        font-size: 3.8vw;
+        font-size: 3vw;
         margin-bottom: 1vw;
     }
 
     /* - Copyright - */
     .text-copyright {
-        font-size: 3.5vw;
+        font-size: 2.5vw;
+        padding-top: 1vw;
     }
 }
 
@@ -143,7 +145,7 @@ a.nav-link {
 
     .footer-menu-container {
         padding-right: 7vw;
-        padding-top: 7vw;
+        padding-top: 7.5vw;
     }
 
     #menu-footer-menu {

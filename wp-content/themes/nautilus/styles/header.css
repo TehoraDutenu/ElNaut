@@ -164,7 +164,7 @@ a.nav-link {
         display: flex;
         flex-direction: row;
         margin-left: -3vw;
-        padding-top: 11vw;
+        padding-top: 7vw;
     }
 
     .custom_a em {
@@ -183,7 +183,7 @@ a.nav-link {
     /* * -- Header -- * */
 
     header {
-        height: 26vw;
+        height: 28vw;
     }
 
     .header {
@@ -222,6 +222,10 @@ a.nav-link {
     }
 
     /* - Navigation - */
+    ul#menu-menu-principal {
+        width: 55vw;
+    }
+
     .toggle-nav {
         margin-right: 6vw;
         margin-top: 0;
