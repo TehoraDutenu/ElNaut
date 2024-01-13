@@ -32,7 +32,7 @@
         <div class="header d-flex flex-row">
             <!-- Logo et titre -->
             <a class="logo-link" href="<?php echo get_bloginfo('wpurl') ?>">
-                <img class="img-fluid" id="logo" src="<?php echo get_template_directory_uri() . "/images/logoShadow2.png"; ?>" alt="logo">
+                <img class="img-fluid" id="logo" src="<?php echo get_template_directory_uri() . "/images/logo2.png"; ?>" alt="logo">
             </a>
             <div class="d-flex flex-column custom_header">
                 <!-- Menu navigation -->
@@ -40,7 +40,7 @@
                     <div class="toggle-nav container-fluid justify-content-end">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'your-theme-slug'); ?>">
-                            <i class="fa-solid fa-bars" style="color: #f3dcb0;"></i>
+                            <i class="fa-solid fa-bars" style="color: #000;"></i>
                         </button>
                         <?php
                         wp_nav_menu(array(

@@ -27,7 +27,7 @@
 
 
 /* - Identité - */
-p {
+p label {
     color: #f3dcb0;
     font-family: Lato, sans-serif;
     font-size: 1rem;
@@ -99,11 +99,6 @@ p.mentions {
     margin-bottom: inherit;
     padding-top: 5vw;
 }
-
-
-
-
-
 
 
 /*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/

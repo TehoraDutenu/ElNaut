@@ -10,7 +10,7 @@
 
 .footer {
     position:absolute;
-    background-color: #000;
+    background-color: #fff;
     bottom: 0;
     box-shadow: 1px 1px 15px #4d4d4d; 
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .address {
-    color: #f3dcb0;    
+    color: #000;    
     font-family: 'Lato', sans-serif;
     height: 28vw;
     padding-top: 4vw;
@@ -29,13 +29,13 @@
 }
 
 .address h5 {
-    color: #f3dcb0;    
+    color: #000;    
     font-family: 'Abril Fatface', serif;
     font-size: 5.5vw;
 }
 
 .address address {
-    color: #f3dcb0;    
+    color: #000;    
     font-family: 'Lato', sans-serif;
     font-size: 3.5vw;
     margin-top: -1vw;
@@ -66,7 +66,7 @@ a.nav-link {
 
 /* - Copyright - */
 .copyright {
-    background-color: #fd3501;
+    background-color: #000;
     bottom: 0;
     height: 6vw;
     position: absolute;
@@ -74,7 +74,7 @@ a.nav-link {
 }
 
 .text-copyright {
-    color: #f3dcb0;
+    color: #fff;
     font-family: Lato, sans-serif;
     font-size: 3vw;
     padding-top: 0.5vw;
@@ -170,6 +170,7 @@ a.nav-link {
 
     .address {
         height: 20vw;
+        padding-top: 3vw;
     }
 
     .address h5 {
@@ -177,7 +178,7 @@ a.nav-link {
     }
     
     .address address {
-        font-size: 1.5vw;
+        font-size: 2vw;
         margin-top: 1vw;
     }
     
@@ -189,7 +190,7 @@ a.nav-link {
     }
     
     #menu-footer-menu .nav-item .custom_a em {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
 
@@ -200,6 +201,7 @@ a.nav-link {
 
     .text-copyright {
         font-size: 1.5vw;
+        padding-top: 0.3vw;
     }
 }
 
@@ -207,4 +209,40 @@ a.nav-link {
 /*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
 
 @media (min-width: 1280px) {
+
+    .footer {
+        height: 22vw;
+    }
+
+    .address {
+        height: 18vw;
+        padding-top: 4vw;
+    }
+
+    .address h5 {
+        font-size: 3vw;
+    }
+
+    .address address {
+        font-size: 1.6vw;
+        padding-top: 1vw;
+    }
+
+    #menu-footer-menu .nav-item .custom_a em {
+        font-size: 1.6vw;
+    }
+
+    .footer-menu-container {
+        height: 18vw;
+        padding-top: 5vw;
+    }
+
+    .copyright {
+        height: 4vw;
+    }
+
+    .text-copyright {
+        font-size: 1.5vw;
+        padding-top: 0.8vw;
+    }
 }
