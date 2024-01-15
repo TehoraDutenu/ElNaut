@@ -193,7 +193,7 @@ a.nav-link {
     .custom_header {
         flex-direction: column-reverse !important;
         height: 24vw;
-        margin-left: 5vw;
+        margin-left: -3vw;
         width: 70%;
     }
 
@@ -202,8 +202,8 @@ a.nav-link {
     }
 
     #logo {
-        margin-left: 8vw;
-        padding-top: 3vw;
+        margin-left: 12vw;
+        padding-top: 5vw;
         width: 17vw;
     }
 
@@ -270,6 +270,7 @@ a.nav-link {
     .custom_header {
         flex-direction: column-reverse !important;
         height: 21vw;
+        margin-left: -6vw;
         margin-top: 1vw;
         width: 70%;
     }
@@ -280,9 +281,9 @@ a.nav-link {
 
 
     #logo {
-        margin-left: 12vw;
-        padding-top: 2vw;
-        width: 15vw;
+        margin-left: 16vw;
+        padding-top: 2.5vw;
+        width: 17vw;
     }
 
     .title {

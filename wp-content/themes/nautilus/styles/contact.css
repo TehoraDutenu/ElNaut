@@ -3,35 +3,40 @@
 /**********************************/
 
 
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
 
 /** -- Main -- **/
+.contact-body {
+    margin-bottom: 44vw;
+}
 
 /* - Formulaire - */
 .contact-main-container {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #000;
     display: flex;
     flex-direction: column;
     margin: 5vw auto;
+    margin-top: 0;
     padding-bottom: 5vw;
     padding-top: 7vw;
     width: 90%;
 }
 
 .contact-title {
-    color: #f3dcb0;
-    font-family: 'Abril Fatface', serif;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 5vw;
+    font-weight: normal;
     margin: 1vw auto;
-    text-shadow: 0 0 10px #000;
 }
 
 
 /* - Identité - */
 p label {
-    color: #f3dcb0;
+    color: #fff;
     font-family: Lato, sans-serif;
-    font-size: 1rem;
-    text-shadow: 0 0 3px #fd3501;
+    font-size: 3.3vw;
 }
 
 .label {
@@ -51,65 +56,346 @@ form.wpcf7-form p:first-of-type {
  
 /* - Checkboxes - */
 .wpcf7-list-item {
+    font-size: 3.5vw;
     display: flex;
-    height: 5vw;
+    height: 10vw;
+}
+
+.wpcf7-list-item input {
+    background-color: #fff;
+    margin-bottom: 2vw;
+    width: 5vw;
 }
 
 .wpcf7-list-item:first-of-type {
-    margin-top: 3vw;
+    margin-top: 9vw;
 }
 
 .wpcf7-list-item-label {
-    width: 65vw;
+    color: #fff;
+    width: 60vw;
 }
 
-span.wpcf7-list-item input {
-    background-color: #fbf3e7;
-    width: 3vw;
-}
-
+/* - Message - */
 textarea {
-    background-color: #fbf3e7;
+    background-color: #fefefe;
+    height: 55vw;
     width: 70vw;
 }
 
 
 /* - Confirmation - */
+.contact-accept {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-accept p {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 5vw;
+    text-align: center;
+}
+
+.contact-accept p:first-of-type {
+    padding-bottom: 0;
+}
+
+.contact-accept p:last-of-type {
+    color: #fff;
+}
+
+.accept-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.jai-compris {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+    padding-top: 6.5vw !important;
+}
+
+.contact-accept .jai-compris {
+    padding: 1vw;
 }
 
 .wpcf7-acceptance span {
     margin-top: -1vw !important;
 }
 
+.wpcf7-list-item label input {
+    margin-bottom: 0;
+    margin-right: 4vw;
+}
 
 /* - Bouton - */
 .wpcf7-submit {
-    background-color: #f3dcb0;
+    background-color: #fefefe;
     font-family: Lato, sans-serif;
+    font-size: 4vw;
+    height: 7vw;
     margin-top: 3vw;
 }
 
 /* - Astérisque - */
 p.mentions {
-    font-size: 0.8rem;
+    color: #fff;
     margin-bottom: inherit;
+    padding-bottom: 5vw;
     padding-top: 5vw;
+}
+
+
+/*** *** TAILLE TABLETTE PORTRAIT (width-max: 768px) *** ***/
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+    /* - Formulaire - */
+    .contact-main-container {
+        padding-top: 11vw;
+    }
+
+    .contact-title {
+        margin-bottom: 5vw;
+    }
+
+    /* - Identité - */
+    p label {
+        font-size: 3.5vw;
+    }
+
+    .wpcf7-form-control-wrap input {
+        height: 7vw;
+    }
+
+    /* - Checkboxes - */
+    .wpcf7-list-item-label {
+        font-size: 3.6vw;
+    }
+
+    /* - Message - */
+    textarea {
+        margin-top: 1.5vw;
+        width: 66vw;
+    }
+
+    /* - Confirmation - */
+    .jai-compris {
+        padding-top: 8.5vw !important;
+    }
+    
+    .jai-compris,
+    .mentions {
+        font-size: 3.5vw;        
+    }
+}
+
+
+/*** *** TAILLE TABLETTE PAYSAGE ET 13" (width-min: 768px) *** ***/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .contact-main-container {
+        padding-top: 9vw;
+    }
+
+    form.wpcf7-form p:first-of-type {
+        margin-top: 6vw;
+    }
+
+    /* - Confirmation - */
+    .jai-compris {
+        padding-top: 10.5vw !important;
+    }
+
+    .jai-compris,
+    .mentions {
+        font-size: 3.3vw;
+    }
 }
 
 
 /*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/
 
 @media (min-width: 1024px) and (max-width: 1279px) {
+
+    .contact-body {
+        margin-bottom: 30vw;
+    }
+
+    .contact-main-container {
+        padding-top: 9vw;
+        width: 80%;
+    }
+
+    .contact-title {
+        font-size: 3vw;
+    }
     
+    /* - Identité - */
+    .label {
+        font-size: 2.5vw;
+    }
+
+    input,
+    .bouton-inscription {
+        width: 55vw;
+    }
+
+    form.wpcf7-form p:first-of-type {
+        margin-top: 7vw;
+    }
+
+    p label {
+        font-size: 2vw;
+    }
+
+    /* - Checkboxes - */
+    .wpcf7-list-item {
+        height: 8vw;
+    }
+
+    .wpcf7-list-item-label {
+        font-size: 3vw;
+        width: 49vw;
+    }    
+
+    /* - Message - */
+    .contact-message p {
+        margin-top: 3vw !important;
+    }
+
+    textarea {
+        width: 55vw;
+    }
+
+    /* - Confirmation - */
+    .contact-accept {
+        width: 55vw;
+    }
+
+    .contact-accept p {
+        margin-top: 2vw !important;
+    }
+
+    .contact-accept p label {
+        font-size: 2.3vw;
+    }
+
+    .jai-compris {
+        padding-top: 4.5vw !important;
+    }
+
+    .jai-compris,
+    .mentions {
+        font-size: 2.3vw;
+    }
+
+    .wpcf7-submit {
+        font-size: 3vw;
+    }
 }
 
 
 /*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
 
 @media (min-width: 1280px) {
+
+    .contact-body {
+        margin-bottom: 28vw;
+    }
+
+    .contact-main-container {
+        padding-top: 5vw;
+        width: 70%;
+    }
+
+    .contact-title {
+        font-size: 1.5vw;
+    }
+
+    /* - Identité - */
+    p label {
+        font-size: 1.3vw;
+    }
     
+    .label {
+        margin-bottom: 1vw;
+    }
+
+    input,
+    .bouton-inscription {
+        width: 40vw;
+    }
+
+    /* - Checkboxes - */
+    .wpcf7-list-item {
+        height: 4vw;
+    }
+
+    .wpcf7-list-item:first-of-type {
+        margin-top: 5vw;
+    }
+
+    .wpcf7-list-item-label {
+        font-size: 1.3vw;
+        width: 30vw;
+    }    
+
+    .wpcf7-list-item input {
+        width: 2vw;
+    }   
+
+    /* - Message - */
+    .contact-message p {
+        margin-top: 2vw !important;
+    }
+
+    textarea {
+        width: 40vw;
+    }
+ 
+    /* - Confirmation - */
+    .contact-accept {
+        width: 40vw;
+    }
+
+    .contact-accept p {
+        margin-top: -1vw !important;
+    }
+
+    .contact-accept p:first-of-type {
+        padding: 3vw;
+        padding-bottom: 0;
+        padding-right: 1vw;
+        padding-top: 5vw;
+    }
+
+    .contact-accept p label {
+        font-size: 1.5vw;
+    }
+
+    .jai-compris,
+    .mentions {
+        font-size: 1.5vw;
+    }
+
+    .jai-compris {
+        padding-top: 4.5vw !important;
+    }
+
+    .wpcf7-submit {
+        font-size: 2vw;
+        padding: 2vw;
+        width: 25vw;
+    }
+
+    p.mentions {
+        font-size: 1.3vw;
+        padding-bottom: 1vw;
+        padding-top: 2vw;
+    }
 }
