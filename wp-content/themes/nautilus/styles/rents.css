@@ -2,24 +2,221 @@
 /**** **** PAGE LOCATIONS **** ****/
 /**********************************/
 
-/*** *** GÉNÉRAL *** ***/
 
+
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
 
 body.rents-body {
     background-color: #fefefe;
-    background-image: none;
-    height: max-content;
     margin: 0;
-    margin-bottom: 40vw;
+    margin-bottom: 42vw;
     padding: 0;
 }
 
-/* .rents-main {
-    background-color: #f3dcb0;
-    height: max-content;
-} */
+/** -- Main -- */
 
 .rents-main-container {
     width: 90%; 
     margin: 0 auto;
+}
+
+div.black {
+    background-color: #000;
+}
+
+div.white {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+}
+
+.rents-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 4vw;
+    margin-bottom: 10vw;
+    margin-top: 6vw;
+    text-align: center;
+}
+
+.le-sas,
+.salle-machines,
+.le-qg,
+.atelier,
+.bocal {
+    margin-bottom: 5vw;
+}
+
+i {
+    color: #fff;
+    font-size: 5vw;
+}
+
+.black h4 {
+    color: #fff;
+    font-family: 'Abril Fatface', serif;
+    font-size: 5vw;
+    margin-bottom: 4vw;
+}
+
+.black h5 {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+}
+
+.black p {
+    padding-bottom: 5vw;
+}
+
+.black h5,
+.black p {
+    color: #fff;
+    font-family: Lato, sans-serif;
+}
+
+.black {
+    text-align: center;
+    padding: 6vw;
+}
+
+tr,
+td {
+    text-align: center;
+}
+
+
+/*** *** TAILLE TABLETTE PORTRAIT (width-max: 768px) *** ***/
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+    .black h5 {
+        font-size: 4vw;
+    }
+    
+    .black p {
+        font-size: 3vw;
+        padding-bottom: 4vw;
+    }
+
+    i {
+        font-size: 6vw;
+    }
+    
+    th,
+    td {
+        font-size: 3vw;
+    }
+}
+
+
+/*** *** TAILLE TABLETTE PAYSAGE ET 13" (width-min: 768px) *** ***/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .black h4 {
+        font-size: 4vw;
+    }
+
+    .black h5 {
+        font-size: 3.5vw;
+    }
+
+    .black p {
+        font-size: 3vw;
+    }
+
+    th,
+    td {
+        font-size: 2.8vw;
+    }
+}
+
+
+/*** *** TAILLE LAPTOP (width-min: 1024px) *** ***/
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+    body.rents-body {
+        margin-bottom: 30vw;
+    }
+
+    .rents-main-container {
+        width: 70%;
+    }
+
+    .rents-title {
+        font-size: 3vw;
+        margin-bottom: 6vw;
+    }
+
+    .black h4 {
+        font-size: 3vw;
+    }
+
+    .black h5 {
+        font-size: 2.5vw;
+    }
+
+    .black p {
+        font-size: 2.3vw;
+    }
+
+    th,
+    td {
+        font-size: 2.3vw;
+    }
+}
+
+
+/*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
+
+@media (min-width: 1280px) {
+
+    body.rents-body {
+        margin-bottom: 30vw;
+    }
+
+    .rents-main-container {
+        width: 50%;
+    }
+
+    .rents-title {
+        font-size: 2.3vw;
+        margin-bottom: 5vw;
+    }
+
+    .le-sas,
+    .salle-machines,
+    .le-qg,
+    .atelier,
+    .bocal {
+        margin-bottom: 4vw;
+    }
+
+
+    .black {
+        padding: 5vw;
+    }
+
+    .black h4 {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .black h5 {
+        font-size: 2vw;
+        margin-bottom: 3vw;
+    }
+
+    .black p {
+        font-size: 1.5vw;
+        padding-bottom: 4vw;
+    }
+
+    tr,
+    td {
+        font-size: 1.5vw;
+    }
+
 }

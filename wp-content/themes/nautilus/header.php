@@ -32,7 +32,7 @@
         <div class="header d-flex flex-row">
             <!-- Logo et titre -->
             <a class="logo-link" href="<?php echo get_bloginfo('wpurl') ?>">
-                <img class="img-fluid" id="logo" src="<?php echo get_template_directory_uri() . "/images/logo2.png"; ?>" alt="logo">
+                <img class="img-fluid" id="logo" src="<?php echo get_template_directory_uri() . "/images/logo.png"; ?>" alt="logo">
             </a>
             <div class="d-flex flex-column custom_header">
                 <!-- Menu navigation -->

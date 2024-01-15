@@ -34,6 +34,31 @@ body.events-body {
     margin-top: 6vw;
 }
 
+/* - Vers Rents - */
+.rents-linking {
+    margin-top: 6vw;
+    text-align: center;
+}
+
+.rents-linking-title {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 4.3vw;
+    padding-top: 3vw;
+}
+
+.rents-linking-button {
+    background-color: #fefefe;
+    border-radius: 8px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 4vw;
+    font-weight: 100;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    padding: 2.5vw;
+}
+
 /* - Carte - */
 .map-sync,
 .map-sync label,
@@ -54,31 +79,6 @@ body.events-body {
     height: 48vw;
 }
 
-
-/* - Vers Rents - */
-.rents-linking {
-    margin-top: 6vw;
-    text-align: center;
-}
-
-.rents-linking-title {
-    color: #fff;
-    font-family: Lato, sans-serif;
-    font-size: 4.3vw;
-    padding-top: 3vw;
-}
-
-.rents-linking-button {
-    background-color: #fefefe;
-    border-radius: 8px;
-    color: #000;
-    font-family: 'Abril Fatface', serif;
-    font-size: 4vw;
-    font-weight: 100;
-    margin-bottom: 5vw;
-    margin-top: 3vw;
-    padding: 2.5vw;
-}
 
 
 /*** *** TAILLE TABLETTE PORTRAIT (width-max: 768px) *** ***/
