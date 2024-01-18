@@ -1,0 +1,49 @@
+/**********************************/
+ /***** ***** PAGE 404 ***** *****/
+/**********************************/
+
+
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
+
+
+/**********************************/
+ /***** ***** PAGE 404 ***** *****/
+/**********************************/
+
+
+/*** *** MOBILE FIRST (max-width: 576 px) *** ***/
+
+
+.oups-body {
+    width: auto;
+    height: auto;
+}
+
+.oups-main-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.oups-img {
+    margin-bottom: 10vw;
+    width: 80%;
+}
+
+.oups-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 4vw;
+    font-weight: lighter;
+    margin-bottom: 5vw;
+    text-align: center;
+}
+
+.oups-link {
+    color: #a52a2a;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5vw;
+    margin-bottom: 7vw;
+}
+

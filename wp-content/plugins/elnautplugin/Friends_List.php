@@ -72,7 +72,6 @@ class Friends_list extends WP_List_Table
             case 'prenom':
             case 'nom':
             case 'email':
-            case 'telephone':
                 return $item->$column_name;
                 break;
             default:

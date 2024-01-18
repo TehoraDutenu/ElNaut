@@ -30,8 +30,11 @@ class ElNaut
             'dashicons-groups',
             40
         );
+    }
 
-        add_submenu_page(
+
+
+    /*         add_submenu_page(
             'friends',
             'Ajouter des amis',
             'Ajouter',
@@ -39,7 +42,7 @@ class ElNaut
             'ajouter-amis',
             array($this, 'nosAmis')
         );
-    }
+ */
 
     public function nosAmis()
     {

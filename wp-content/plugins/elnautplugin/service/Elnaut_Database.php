@@ -39,7 +39,7 @@ class Elnaut_Database
     {
         global $wpdb;
 
-        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['email']) && isset($_POST['telephone'])) {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['email'])) {
 
             $data = array(
                 'prenom' => sanitize_text_field($_POST['prenom']),
