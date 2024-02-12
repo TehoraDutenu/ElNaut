@@ -1,0 +1,112 @@
+/***********************************/
+/**** **** PAGE ÉVÉNEMENTS **** ****/
+/***********************************/
+
+
+
+/*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
+
+/*** MAIN ***/
+
+.events-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*** AGENDA ***/
+
+.events-container,
+iframe {
+    height: 80vw;
+    width: 50%;
+}
+
+/*** LINKS ***/
+
+.events-links-container {
+    padding: 4.5em 4em;
+    text-align: right;
+    width: 50%;
+}
+
+
+
+/*** *** TAILLE (max-width: 1279px) *** ***/
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /*** LINKS ***/
+
+    .events-links-container {
+        padding: 4em 2.5em;
+        padding-left: 0;
+        text-align: right;
+    }
+
+    .events-links .nav-item {
+        font-size: 7vw;
+    }    
+}
+
+
+/*** *** TAILLE (max-width: 767px) *** ***/
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    /*** MAIN ***/
+
+    .events-main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*** AGENDA ***/
+
+    .events-container,
+    iframe {
+        padding-top: 2em;
+        width: 80%;
+    }
+
+
+    /*** LINKS ***/
+
+    .events-links-container {
+        margin-top: 2em;
+        text-align: center;
+        width: 100%;
+    } 
+}    
+
+
+/*** *** TAILLE (max-width: 480px) *** ***/
+
+@media screen and (max-width: 480px) {
+
+    /*** MAIN ***/
+
+    .events-main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*** AGENDA ***/
+
+    .events-container,
+    iframe {
+        height: 30em;
+        padding-top: 1em;
+        width: 80%;
+    }
+
+    /*** LINKS ***/
+
+    .events-links-container {
+        margin-top: 1em;
+        text-align: center;
+        width: 100%;
+    }    
+}

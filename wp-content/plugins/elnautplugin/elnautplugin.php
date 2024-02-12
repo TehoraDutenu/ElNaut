@@ -30,16 +30,17 @@ class ElNaut
             'dashicons-groups',
             40
         );
-
-        add_submenu_page(
-            'friends',
-            'Ajouter des amis',
-            'Ajouter',
-            'manage_options',
-            'ajouter-amis',
-            array($this, 'nosAmis')
-        );
     }
+
+    //     add_submenu_page(
+    //         'friends',
+    //         'Ajouter des amis',
+    //         'Ajouter',
+    //         'manage_options',
+    //         'ajouter-amis',
+    //         array($this, 'nosAmis')
+    //     );
+    // }
 
     public function nosAmis()
     {

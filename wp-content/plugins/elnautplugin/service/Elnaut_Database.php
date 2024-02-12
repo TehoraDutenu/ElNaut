@@ -59,8 +59,8 @@ class Elnaut_Database
         global $wpdb;
         if (!is_array($ids)) {
             $ids = array($ids);
-        }
+        };
 
-        $wpdb->query('DELETE FROM {$wpdb->prefix}elnaut_friends WHERE id IN (' . implode(",", $ids) . ')');
+        $wpdb->query("DELETE FROM {$wpdb->prefix}elnaut_friends WHERE id IN (" . implode(',', $ids) . ");");
     }
 }

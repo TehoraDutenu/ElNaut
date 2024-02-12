@@ -50,8 +50,7 @@ class Friends_list extends WP_List_Table
             'id' => 'id',
             'prenom' => 'Prénom',
             'nom' => 'Nom',
-            'email' => 'Email',
-            'telephone' => 'Téléphone'
+            'email' => 'Email'
         );
 
         return $columns;
@@ -72,7 +71,6 @@ class Friends_list extends WP_List_Table
             case 'prenom':
             case 'nom':
             case 'email':
-            case 'telephone':
                 return $item->$column_name;
                 break;
             default:
@@ -87,7 +85,6 @@ class Friends_list extends WP_List_Table
             'prenom' => array('prenom', true),
             'nom' => array('nom', true),
             'email' => array('email', true),
-            'telephone' => array('telephone', true)
         );
         return $sortable;
     }

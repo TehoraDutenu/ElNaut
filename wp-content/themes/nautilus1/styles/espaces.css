@@ -1,0 +1,70 @@
+/********************************/
+/**** **** PAGE ESPACES **** ****/
+/********************************/
+
+
+/*** *** TAILLE DESKTOP (width-min: 1280px) *** ***/
+
+/*** MAIN ***/
+
+.espaces-main {
+    padding: 3em 1em;
+}
+
+/*** LINKS ***/
+
+ul.espaces-links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.8em;
+}
+
+ul.espaces-links .nav-item {
+    font-size: 3em;
+}
+
+
+/*** *** TAILLE (max-width: 1279px) *** ***/
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /*** LINKS ***/
+
+    ul.espaces-links {
+        flex-wrap: wrap;
+        padding-top: 2em;
+    }
+}
+
+
+/*** *** TAILLE (max-width: 767px) *** ***/
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    /*** MAIN ***/
+
+    .espaces-main {
+        padding: 2em 1em;
+    }
+
+    /*** LINKS ***/
+
+    ul.espaces-links {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2em;
+        padding-top: 2.5em;
+    }
+
+}
+
+
+/*** *** TAILLE (max-width: 480px) *** ***/
+
+@media screen and (max-width: 480px) {
+
+    /*** LINKS ***/
+
+}
