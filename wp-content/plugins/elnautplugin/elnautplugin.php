@@ -31,6 +31,21 @@ class ElNaut
             40
         );
     }
+<<<<<<< HEAD
+=======
+
+
+
+    /*         add_submenu_page(
+            'friends',
+            'Ajouter des amis',
+            'Ajouter',
+            'manage_options',
+            'ajouter-amis',
+            array($this, 'nosAmis')
+        );
+ */
+>>>>>>> f717446ab3f31d195967f9f6943a7f1dbcdc54d9
 
     //     add_submenu_page(
     //         'friends',

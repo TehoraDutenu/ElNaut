@@ -1,7 +1,11 @@
 <footer class="footer">
     <div class="address">
         <h5>Le Nautilus</h5>
+<<<<<<< HEAD
         <address>20 rue Jules Verne<br>66000 Perpignan</address>
+=======
+        <address>10 rue Jules Verne<br>66000 Perpignan</address>
+>>>>>>> f717446ab3f31d195967f9f6943a7f1dbcdc54d9
     </div>
     <?php
     wp_nav_menu(array(
